@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-pink': '#FFC0CB',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-custom-pink min-h-screen flex flex-col p-4 rounded-lg">
+
+    <header class="text-center my-8">
+        <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-bold rounded-lg p-4">
+            Basics
+        </h1>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center justify-center space-y-8 md:space-y-0 md:flex-row md:space-x-8 my-8">
+
+        <div class="flex flex-col items-center p-4 bg-white bg-opacity-70 rounded-lg shadow-lg">
+            <h2 class="text-xl font-semibold mb-2">Lazada</h2>
+            <a href="https://www.lazada.co.th/" target="_blank" rel="noopener noreferrer">
+                <img src="lazada.png"
+                     alt="Lazada Online Shop"
+                     class="w-full max-w-xs h-auto rounded-lg mb-4 shadow-md">
+            </a>
+        </div>
+
+        <div class="flex flex-col items-center p-4 bg-white bg-opacity-70 rounded-lg shadow-lg">
+            <h2 class="text-xl font-semibold mb-2">Shopee</h2>
+            <a href="https://shopee.co.th/" target="_blank" rel="noopener noreferrer">
+                <img src="Shopee.png"
+                     alt="Shopee Online Shop"
+                     class="w-full max-w-xs h-auto rounded-lg mb-4 shadow-md">
+            </a>
+        </div>
+    </main>
+
+    <hr class="w-full border-t-2 border-gray-400 my-8 rounded-full">
+
+    <footer class="w-full text-right py-4 pr-4">
+        <p class="text-gray-800 text-sm italic font-mono">
+            &copy; wil 2021
+        </p>
+    </footer>
+
+</body>
+</html>

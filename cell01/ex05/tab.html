@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .table-cell-custom {
+            border: 1px solid #ccc;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            min-height: 150px;
+        }
+    </style>
+</head>
+<body class="rounded-lg">
+
+    <div class="w-11/12 max-w-4xl bg-white rounded-lg shadow-xl overflow-hidden">
+        <div class="flex flex-col md:flex-row">
+            <div class="table-cell-custom flex-1 bg-yellow-300 bg-opacity-70 rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none rounded-tr-lg">
+                <p>Yellow</p>
+            </div>
+            <div class="table-cell-custom flex-1 bg-red-300 bg-opacity-70 rounded-br-lg md:rounded-tr-lg md:rounded-bl-none rounded-bl-lg">
+                <p>Pink</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
