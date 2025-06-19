@@ -1,0 +1,87 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+section {
+  min-height: 100vh;
+  padding: 100px 20px 40px;
+  text-align: center;
+}
+
+#home {
+  background-color: #f2f2f2;
+}
+
+#about {
+  background-color: #d9eaf2;
+}
+
+#contact {
+  background-color: #ffffff;
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.contact-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.social-icons img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+

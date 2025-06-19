@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 30px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  width: 250px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.profile-pic {
+  width: 100%;
+  height: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: gray;
+  padding: 5px 0;
+}
+
+.location {
+  font-size: 13px;
+  color: #444;
+  padding-bottom: 10px;
+}
+
+.socials {
+  padding: 10px 0;
+}
+
+.socials a {
+  margin: 0 5px;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.contact-btn {
+  background: black;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.contact-btn:hover {
+  background: #444;
+}

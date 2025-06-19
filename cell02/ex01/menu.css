@@ -1,0 +1,82 @@
+body {
+  background-color: #fffaf3;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  margin: 0;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #d35400;
+  margin-bottom: 30px;
+}
+
+/* กล่องหลัก */
+.dropdown-wrapper {
+  position: relative;
+  width: 260px;
+}
+
+#dropdown-toggle {
+  display: none;
+}
+
+.dropdown-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d35400;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s;
+}
+
+.dropdown-label:hover {
+  background: #e67e22;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+/* ลูกศรหมุนตอนคลิก */
+#dropdown-toggle:checked + .dropdown-label .arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  background: #f39c12;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: none;
+  overflow: hidden;
+}
+
+#dropdown-toggle:checked ~ .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f5b041;
+}

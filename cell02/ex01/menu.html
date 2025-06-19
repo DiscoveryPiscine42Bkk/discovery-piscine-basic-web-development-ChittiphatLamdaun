@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Train Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .title {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .dropdown-wrapper {
+      max-width: 400px;
+      margin: auto;
+    }
+
+    .dropdown-label {
+      display: block;
+      background: #333;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .arrow {
+      float: right;
+    }
+
+    #dropdown-toggle {
+      display: none;
+    }
+
+    .dropdown-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-top: none;
+      display: none;
+    }
+
+    #dropdown-toggle:checked + .dropdown-label + .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li {
+      padding: 10px 15px;
+      border-top: 1px solid #ccc;
+    }
+
+    .dropdown-menu li:hover {
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">🚄 Train Journey Info</div>
+
+  <div class="dropdown-wrapper">
+    <input type="checkbox" id="dropdown-toggle" />
+    <label for="dropdown-toggle" class="dropdown-label">
+      📋 Train Details
+      <span class="arrow">&#x25BC;</span>
+    </label>
+    <ul class="dropdown-menu">
+      <li><strong>📍 Paris ➝ Lyon</strong><br/>
+        Departure: Saturday, Sept 12th 1985<br/>
+        Speed: 216 km/h<br/>
+        Weather: Wind S/SE, force 5<br/>
+        Temp: 13°C outside, 22°C inside<br/>
+        Sky: Cloudy<br/>
+        Lunar eclipse
+      </li>
+      <li><strong>📍 Lyon ➝ Paris</strong><br/>
+        Departure: Sept 12th 1985 at 23:00<br/>
+        Speed: 224 km/h<br/>
+        Weather: Not specified
+      </li>
+      <li><strong>❓Question</strong><br/>
+        Which train will be furthest from Paris when they meet?<br/>
+        <em>Answer: The **Lyon ➝ Paris** train will be furthest from Paris when they cross, because it departed later and traveled faster.</em>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
