@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Landing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body class="bg-black text-white ">
+
+  <!-- Navbar -->
+<nav class="w-full bg-black text-white px-6 py-4 flex items-center justify-between shadow-md sticky top-0 ">
+  <!-- Home icon -->
+  <div class="flex items-center space-x-2">
+    <a href="index.html">
+      <img src="/rush/img/Vector.png" alt="Home" class="w-5 h-5 hover:scale-110 transition" />
+    </a>
+  </div>
+
+  <!-- Navigation links -->
+  <ul class="flex space-x-6 text-lg">
+    <li><a href="#hero" class="hover:text-red-500 transition">Portfolio</a></li>
+    <li><a href="#experience" class="hover:text-red-500 transition">Experiences</a></li>
+    <li><a href="#contact" class="hover:text-red-500 transition">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="h-screen flex flex-col justify-center items-center text-center space-y-6 px-4">
+    <div>
+      <h1 class="text-3xl sm:text-4xl font-semibold">Our Portfolio</h1>
+      <p class="text-lg sm:text-xl text-gray-300 mt-2">Learn more about Us</p>
+    </div>
+    <div class="flex space-x-6">
+      <a href="chev.html" class="px-6 py-2 border border-red-500 text-red-500 rounded-lg text-lg hover:bg-red-500 hover:text-white transition">
+        Chev
+      </a>
+      <a href="pi.html" class="px-6 py-2 border border-red-500 text-red-500 rounded-lg text-lg hover:bg-red-500 hover:text-white transition">
+        Pi
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-black shadow-inner border-t border-gray-700">
+    <p class="text-sm text-gray-500">© 2025 42Bangkok Portfolio</p>
+  </footer>
+
+</body>
+</html>
